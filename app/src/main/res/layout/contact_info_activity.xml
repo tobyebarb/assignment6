@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/AppTheme.ContactInfo.TextView"
+        android:layout_marginTop="15dp"
+        android:text="Toby Ebarb"
+        android:layout_gravity="center"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        >
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.ContactInfo.Chip"
+                android:text="Call"
+                app:chipIcon="@drawable/ic_phone_white"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.ContactInfo.Chip"
+                android:text="Text"
+                app:chipIcon="@drawable/ic_textsms_white"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.ContactInfo.Chip"
+                android:text="Email"
+                app:chipIcon="@drawable/ic_email_white"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.ContactInfo.Chip"
+                android:text="Map"
+                app:chipIcon="@drawable/ic_directions_white"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.ContactInfo.Chip"
+                android:text="Web"
+                app:chipIcon="@drawable/ic_public_white"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_phone_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123456789"
+        style="@style/AppTheme.ContactInfo.TextView"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="-25dp"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        style="@style/AppTheme.ContactInfo.HorizontalDivider"
+        android:layout_marginLeft="60dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_email_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="john.doe@email.com"
+        style="@style/AppTheme.ContactInfo.TextView"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="-25dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        style="@style/AppTheme.ContactInfo.HorizontalDivider"
+        android:layout_marginLeft="60dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_place_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123 Elm Street"
+        style="@style/AppTheme.ContactInfo.TextView"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="-25dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        style="@style/AppTheme.ContactInfo.HorizontalDivider"
+        android:layout_marginLeft="60dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_public_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test.com"
+        style="@style/AppTheme.ContactInfo.TextView"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="-25dp"/>
+
+</LinearLayout>
