@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_img_marginTop">80dp</dimen>
+    <dimen name="mid_img_marginTop">30dp</dimen>
+    <dimen name="img_marginTop">50dp</dimen>
+    <dimen name="editText_width">350dp</dimen>
+    <dimen name="img_marginLeft">10dp</dimen>
+    <dimen name="editText_marginLeft">40dp</dimen>
+    <dimen name="editText_marginTop">-30dp</dimen>
+    <dimen name="mid_editText_marginTop">10dp</dimen>
+
+
+    <dimen name="info_imgPerson_marginTop">100dp</dimen>
+    <dimen name="info_textPerson_marginTop">15dp</dimen>
+    <dimen name="info_hsv_marginLeft">30dp</dimen>
+    <dimen name="info_img_marginLeft">30dp</dimen>
+    <dimen name="info_topImg_marginTop">30dp</dimen>
+    <dimen name="info_img_marginTop">10dp</dimen>
+    <dimen name="info_text_marginLeft">70dp</dimen>
+    <dimen name="info_text_marginTop">-25dp</dimen>
+    <dimen name="info_view_height">3dp</dimen>
+    <dimen name="info_view_marginLeft">60dp</dimen>
+</resources>

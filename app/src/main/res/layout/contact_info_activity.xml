@@ -10,57 +10,66 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_person"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="@dimen/info_imgPerson_marginTop"/>
 
     <TextView
+        android:id="@+id/result_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/AppTheme.ContactInfo.TextView"
-        android:layout_marginTop="15dp"
-        android:text="Toby Ebarb"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/info_textPerson_marginTop"
+        android:textAppearance="@style/AppTheme.ContactInfo.TextView" />
 
     <HorizontalScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="30dp"
-        >
+        android:layout_marginLeft="@dimen/info_hsv_marginLeft"
+        android:layout_marginStart="@dimen/info_hsv_marginLeft">
 
         <com.google.android.material.chip.ChipGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <com.google.android.material.chip.Chip
+                style="@style/AppTheme.ContactInfo.Chip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/AppTheme.ContactInfo.Chip"
-                android:text="Call"
-                app:chipIcon="@drawable/ic_phone_white"/>
+                android:onClick="onPhoneClick"
+                android:text="@string/call_button_label"
+                app:chipIcon="@drawable/ic_phone_white" />
+
             <com.google.android.material.chip.Chip
+                style="@style/AppTheme.ContactInfo.Chip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/AppTheme.ContactInfo.Chip"
-                android:text="Text"
-                app:chipIcon="@drawable/ic_textsms_white"/>
+                android:onClick="onMessageClick"
+                android:text="@string/text_button_label"
+                app:chipIcon="@drawable/ic_textsms_white" />
+
             <com.google.android.material.chip.Chip
+                style="@style/AppTheme.ContactInfo.Chip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/AppTheme.ContactInfo.Chip"
-                android:text="Email"
-                app:chipIcon="@drawable/ic_email_white"/>
+                android:onClick="onEmailClick"
+                android:text="@string/email_button_label"
+                app:chipIcon="@drawable/ic_email_white" />
+
             <com.google.android.material.chip.Chip
+                style="@style/AppTheme.ContactInfo.Chip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/AppTheme.ContactInfo.Chip"
-                android:text="Map"
-                app:chipIcon="@drawable/ic_directions_white"/>
+                android:onClick="onMapsClick"
+                android:text="@string/directions_button_label"
+                app:chipIcon="@drawable/ic_directions_white" />
+
             <com.google.android.material.chip.Chip
+                style="@style/AppTheme.ContactInfo.Chip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/AppTheme.ContactInfo.Chip"
-                android:text="Web"
-                app:chipIcon="@drawable/ic_public_white"/>
+                android:onClick="onWebClick"
+                android:text="@string/web_button_label"
+                app:chipIcon="@drawable/ic_public_white" />
 
         </com.google.android.material.chip.ChipGroup>
 
@@ -69,79 +78,83 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/info_img_marginLeft"
+        android:layout_marginStart="@dimen/info_img_marginLeft"
+        android:layout_marginTop="@dimen/info_topImg_marginTop"
         android:src="@drawable/ic_phone_black_24dp"/>
 
     <TextView
+        android:id="@+id/result_phone_number"
+        style="@style/AppTheme.ContactInfo.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="123456789"
-        style="@style/AppTheme.ContactInfo.TextView"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="-25dp"/>
+        android:layout_marginLeft="@dimen/info_text_marginLeft"
+        android:layout_marginTop="@dimen/info_text_marginTop" />
     
     <View
         android:layout_width="match_parent"
-        android:layout_height="3dp"
+        android:layout_height="@dimen/info_view_height"
         style="@style/AppTheme.ContactInfo.HorizontalDivider"
-        android:layout_marginLeft="60dp"/>
+        android:layout_marginLeft="@dimen/info_view_marginLeft"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/info_img_marginLeft"
+        android:layout_marginStart="@dimen/info_img_marginLeft"
+        android:layout_marginTop="@dimen/info_img_marginTop"
         android:src="@drawable/ic_email_black_24dp"/>
 
     <TextView
+        android:id="@+id/result_email"
+        style="@style/AppTheme.ContactInfo.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="john.doe@email.com"
-        style="@style/AppTheme.ContactInfo.TextView"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="-25dp"/>
+        android:layout_marginLeft="@dimen/info_text_marginLeft"
+        android:layout_marginTop="@dimen/info_text_marginTop" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="3dp"
+        android:layout_height="@dimen/info_view_height"
         style="@style/AppTheme.ContactInfo.HorizontalDivider"
-        android:layout_marginLeft="60dp"/>
+        android:layout_marginLeft="@dimen/info_view_marginLeft"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/info_img_marginLeft"
+        android:layout_marginStart="@dimen/info_img_marginLeft"
+        android:layout_marginTop="@dimen/info_img_marginTop"
         android:src="@drawable/ic_place_black_24dp"/>
 
     <TextView
+        android:id="@+id/result_location"
+        style="@style/AppTheme.ContactInfo.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="123 Elm Street"
-        style="@style/AppTheme.ContactInfo.TextView"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="-25dp"/>
+        android:layout_marginLeft="@dimen/info_text_marginLeft"
+        android:layout_marginTop="@dimen/info_text_marginTop" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="3dp"
+        android:layout_height="@dimen/info_view_height"
         style="@style/AppTheme.ContactInfo.HorizontalDivider"
-        android:layout_marginLeft="60dp"/>
+        android:layout_marginLeft="@dimen/info_view_marginLeft"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/info_img_marginLeft"
+        android:layout_marginStart="@dimen/info_img_marginLeft"
+        android:layout_marginTop="@dimen/info_img_marginTop"
         android:src="@drawable/ic_public_black_24dp"/>
 
     <TextView
+        android:id="@+id/result_website"
+        style="@style/AppTheme.ContactInfo.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test.com"
-        style="@style/AppTheme.ContactInfo.TextView"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="-25dp"/>
+        android:layout_marginLeft="@dimen/info_text_marginLeft"
+        android:layout_marginTop="@dimen/info_text_marginTop" />
 
 </LinearLayout>

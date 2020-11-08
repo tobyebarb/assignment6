@@ -6,10 +6,11 @@
     <string name="email_hint">Email</string>
     <string name="address_hint">Address</string>
     <string name="website_hint">Website</string>
-    <string name="save_button_label">save contact</string>
+    <string name="save_button_label">Save Contact</string>
     <string name="call_button_label">Call</string>
     <string name="text_button_label">Text</string>
     <string name="email_button_label">Email</string>
     <string name="directions_button_label">Map</string>
     <string name="web_button_label">Web</string>
+    <string name="personImg">Person</string>
 </resources>

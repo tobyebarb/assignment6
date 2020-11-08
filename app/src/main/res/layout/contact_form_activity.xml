@@ -6,97 +6,104 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/top_img_marginTop"
+        android:layout_marginLeft="@dimen/img_marginLeft"
         android:src="@drawable/ic_perm_identity_black_24" />
 
     <EditText
         android:id="@+id/first_name"
-        android:hint="First Name"
-        android:layout_width="350dp"
+        android:hint="@string/first_name_hint"
+        android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="-30dp"/>
+        android:layout_marginLeft="@dimen/editText_marginLeft"
+        android:layout_marginTop="@dimen/editText_marginTop"
+        android:singleLine="true"/>
 
     <EditText
         android:id="@+id/last_name"
-        android:hint="Last Name"
-        android:layout_width="350dp"
+        android:hint="@string/last_name_hint"
+        android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginLeft="@dimen/editText_marginLeft"
+        android:layout_marginTop="@dimen/mid_editText_marginTop"
+        android:singleLine="true"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/mid_img_marginTop"
+        android:layout_marginLeft="@dimen/img_marginLeft"
         android:src="@drawable/ic_phone_black_24dp"
         />
 
     <EditText
         android:id="@+id/phone_number"
-        android:hint="Phone Number"
-        android:layout_width="350dp"
+        android:hint="@string/phone_hint"
+        android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="-30dp"/>
+        android:layout_marginLeft="@dimen/editText_marginLeft"
+        android:layout_marginTop="@dimen/editText_marginTop"
+        android:singleLine="true"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/img_marginTop"
+        android:layout_marginLeft="@dimen/img_marginLeft"
         android:src="@drawable/ic_email_black_24dp"
         />
 
     <EditText
         android:id="@+id/email"
-        android:hint="Email"
-        android:layout_width="350dp"
+        android:hint="@string/email_hint"
+        android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="-30dp"/>
+        android:layout_marginLeft="@dimen/editText_marginLeft"
+        android:layout_marginTop="@dimen/editText_marginTop"
+        android:singleLine="true"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/img_marginTop"
+        android:layout_marginLeft="@dimen/img_marginLeft"
         android:src="@drawable/ic_place_black_24dp"
         />
 
     <EditText
         android:id="@+id/location"
-        android:hint="Address"
-        android:layout_width="350dp"
+        android:hint="@string/address_hint"
+        android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="-30dp"/>
+        android:layout_marginLeft="@dimen/editText_marginLeft"
+        android:layout_marginTop="@dimen/editText_marginTop"
+        android:singleLine="true"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/img_marginTop"
+        android:layout_marginLeft="@dimen/img_marginLeft"
         android:src="@drawable/ic_public_black_24dp" />
 
     <EditText
         android:id="@+id/website"
-        android:hint="Website"
-        android:layout_width="350dp"
+        android:hint="@string/website_hint"
+        android:layout_width="@dimen/editText_width"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="-30dp"/>
+        android:layout_marginLeft="@dimen/editText_marginLeft"
+        android:layout_marginTop="@dimen/editText_marginTop"
+        android:singleLine="true"/>
 
     <Button
         android:id="@+id/save_contact"
+        style="@style/AppTheme.ContactForm.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save Contact"
-        style="@style/AppTheme.ContactForm.Button"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:minWidth="350dp"/>
+        android:layout_marginTop="@dimen/img_marginTop"
+        android:minWidth="@dimen/editText_width"
+        android:onClick="onButtonClicked"
+        android:text="@string/save_button_label" />
 
 </LinearLayout>
